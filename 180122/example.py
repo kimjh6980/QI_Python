@@ -72,5 +72,5 @@ def my_func(o, **kwargs):
 		print i
 	pass
 
-	help(my_func())
+	help(my_func)
 	my_func(first_arg['a', 'b', 'c'], second_arg={'x': 1, 'y': 2, 'z': 3})
