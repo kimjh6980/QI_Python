@@ -55,7 +55,10 @@ help(my_func)
 my_func(first_arg=['a', 'b', 'c'], second_arg={'x': 1, 'y': 2, 'z': 3})
 '''
 #---------------------------------------------------------
-def my_func(**kwargs):
+from pdb import help
+
+
+def my_func(o, **kwargs):
 	# A Function that shows how powerful **kwargs is
 	# please feet free to put whatever you like
 	first_arg = kwargs.get('first_arg', -1)
@@ -65,14 +68,9 @@ def my_func(**kwargs):
 	print "third_arg:", kwargs.get('third_arg', -3)
 	print "fourth_arg:", kwargs.get('fourth_arg', -4)
 
-	for i in xrange(0, 100, 2):
-		print i
-	pass
-
-	print "---------------------------------"
-
 	for i in xrange(101, 0, -3):
 		print i
 	pass
 
-	my_func(first_arg=['a', 'b', 'c'], second_arg={'x': 1, 'y': 2, 'z': 3})
+	help(my_func)
+	my_func(first_arg['a', 'b', 'c'], second_arg={'x': 1, 'y': 2, 'z': 3})
