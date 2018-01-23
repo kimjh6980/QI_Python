@@ -1,3 +1,4 @@
+'''
 #---------------------------------------------------------
 def my_func(first_arg, second_arg):
 	print "first_arg:", first_arg
@@ -52,7 +53,7 @@ def my_func(**kwargs):
 help(my_func)
 
 my_func(first_arg=['a', 'b', 'c'], second_arg={'x': 1, 'y': 2, 'z': 3})
-
+'''
 #---------------------------------------------------------
 def my_func(**kwargs):
 	# A Function that shows how powerful **kwargs is
